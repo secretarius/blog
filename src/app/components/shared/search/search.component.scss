@@ -1,0 +1,59 @@
+//.example-form {
+//  display: flex;
+//  justify-content: space-around;
+//
+//}
+//mat-form-field {
+//  min-width: 280px;
+//}
+//
+//.mat-input-element {
+//  color: #673ab7;
+//}
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  //position: relative;
+  //top: 20px;
+  width: 450px;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  //transform: translate(-50%, -50%);
+  background: #1e3a62;
+  transition: all 0.3s ease;
+
+  &.focus {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+fa-icon {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.search-input {
+  //position: relative;
+  //top: 10px;
+  //left: 38px;
+  font-size: 14px;
+  background: none;
+  color: #5a6674;
+  width: 195px;
+  height: 20px;
+  border: none;
+  appearance: none;
+  outline: none;
+
+  &::-webkit-search-cancel-button {
+    appearance: none;
+  }
+}
+
+input::placeholder {
+  color: #fdfdfd;
+}

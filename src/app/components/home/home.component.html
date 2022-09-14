@@ -1,0 +1,50 @@
+<app-tool-bar></app-tool-bar>
+<div class="top-bar">
+  <div class="top-bar__text fw-bold">Top stories</div>
+  <div>
+    <button type="button" class="btn btn-sm btn-primary" (click)="openAddStoryDialog()">Add story</button>
+  </div>
+</div>
+
+<div style="width: 500px">
+  <ng-template #addStoryDialog>
+    <form class="form-container" [formGroup]="newBlogPost" (ngSubmit)="onSubmit()">
+    <h2 matDialogTitle>New blog post</h2>
+    <mat-dialog-content>
+
+        <mat-form-field class="form-field" appearance="fill">
+          <mat-label>Blog post title</mat-label>
+          <input matInput placeholder="Leave title" formControlName="title">
+        </mat-form-field>
+
+        <mat-form-field class="form-field" appearance="fill">
+          <mat-label>Blog post content</mat-label>
+          <textarea matInput placeholder="Leave content..." formControlName="content"></textarea>
+        </mat-form-field>
+
+        <mat-form-field>
+          <ngx-mat-file-input [multiple]="false" [accept]="accept" formControlName="file">
+          </ngx-mat-file-input>
+        </mat-form-field>
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button matDialogClose color="primary"  [disabled]="!newBlogPost.valid" type="submit">Add</button>
+    </mat-dialog-actions>
+    </form>
+  </ng-template>
+</div>
+
+<div class="container py-3">
+  <div class="row">
+    <div class="col">
+      <app-story-list></app-story-list>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

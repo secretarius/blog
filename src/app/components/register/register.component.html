@@ -1,0 +1,104 @@
+<!--<section class="vh-100" style="background-color: #eff0f2">-->
+<!--  <div class="container py-5 h-100">-->
+<!--    <div class="row d-flex justify-content-center align-items-center h-100">-->
+<!--      <div class="col-12 col-md-8 col-lg-6 col-xl-5">-->
+<!--        <div class="card shadow-2-strong" style="border-radius: 0.75rem">-->
+<!--          <div class="card-body p-5">-->
+<!--            <h3 class="mb-5 fw-bold fs-5">Create an account</h3>-->
+<!--            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">-->
+<!--              <div class="form-group mb-4">-->
+<!--                <label class="form-label" id="name">Name</label>-->
+<!--                <input-->
+<!--                  style="height: 3rem"-->
+<!--                  type="text"-->
+<!--                  formControlName="displayName"-->
+<!--                  placeholder="Enter your first and last name"-->
+<!--                  class="form-control"-->
+<!--                  [ngClass]="{-->
+<!--                    'is-invalid': submitted && f['displayName'].errors-->
+<!--                  }"-->
+<!--                />-->
+<!--                <div-->
+<!--                  *ngIf="submitted && f['displayName'].errors"-->
+<!--                  class="invalid-feedback"-->
+<!--                >-->
+<!--                  <div *ngIf="f['displayName'].errors['required']">-->
+<!--                    Name is required-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="form-group mb-4">-->
+<!--                <label class="form-label" id="email">Email</label>-->
+<!--                <input-->
+<!--                  style="height: 3rem"-->
+<!--                  type="email"-->
+<!--                  formControlName="email"-->
+<!--                  placeholder="Enter your email"-->
+<!--                  class="form-control"-->
+<!--                  [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"-->
+<!--                />-->
+<!--                <div-->
+<!--                  *ngIf="submitted && f['email'].errors"-->
+<!--                  class="invalid-feedback"-->
+<!--                >-->
+<!--                  <div *ngIf="f['email'].errors['required']">-->
+<!--                    Email is required-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="form-group mb-5">-->
+<!--                <label class="form-label" id="password">Password</label>-->
+<!--                <input-->
+<!--                  style="height: 3rem"-->
+<!--                  type="password"-->
+<!--                  formControlName="password"-->
+<!--                  placeholder="Enter your password"-->
+<!--                  class="form-control"-->
+<!--                  [ngClass]="{-->
+<!--                    'is-invalid': submitted && f['password'].errors-->
+<!--                  }"-->
+<!--                />-->
+<!--                <div-->
+<!--                  *ngIf="submitted && f['password'].errors"-->
+<!--                  class="invalid-feedback"-->
+<!--                >-->
+<!--                  <div *ngIf="f['password'].errors['required']">-->
+<!--                    Password is required-->
+<!--                  </div>-->
+<!--                  <div *ngIf="f['password'].errors['minlength']">-->
+<!--                    Password must be at least 6 characters-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              &lt;!&ndash;  <div class="form-group mb-5">&ndash;&gt;-->
+<!--              &lt;!&ndash;    <label class="form-label" id="passwordRepeat">Repeat password</label>&ndash;&gt;-->
+<!--              &lt;!&ndash;    <input style="height: 3rem" type="password" formControlName="passwordRepeat" placeholder="Re-enter password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['passwordRepeat'].errors }" />&ndash;&gt;-->
+<!--              &lt;!&ndash;    <div *ngIf="submitted && f['passwordRepeat'].errors" class="invalid-feedback">&ndash;&gt;-->
+<!--              &lt;!&ndash;      <div *ngIf="f['passwordRepeat'].errors['required']">Re-enter password is required</div>&ndash;&gt;-->
+<!--              &lt;!&ndash;      <div *ngIf="f['passwordRepeat'].errors['minlength']">Password must be at least 6 characters</div>&ndash;&gt;-->
+<!--              &lt;!&ndash;    </div>&ndash;&gt;-->
+<!--              &lt;!&ndash;  </div>&ndash;&gt;-->
+<!--              <div class="form-group mb-4">-->
+<!--                <div class="col d-flex flex-column">-->
+<!--                  <button-->
+<!--                    [disabled]="loading"-->
+<!--                    class="btn btn-primary mb-5 btn-lg"-->
+<!--                  >-->
+<!--                    <span-->
+<!--                      *ngIf="loading"-->
+<!--                      class="spinner-border spinner-border-sm mr-1"-->
+<!--                    ></span>-->
+<!--                    Login-->
+<!--                  </button>-->
+<!--                  <div class="col d-flex justify-content-center">-->
+<!--                    <a class="fs-5" href="#!">I already have an account</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->

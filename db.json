@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "createdDate": "2022-08-26T13:40:10.447Z",
+      "updatedDate": "2022-08-26T13:40:10.447Z",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n",
+      "imageUrl": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+      "likesCount": 1,
+      "isLikedByCurrentUser": false,
+      "author": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "test@gmail.com",
+        "displayName": "kind",
+        "avatarUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      }
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+      "createdDate": "2022-08-26T13:40:10.447Z",
+      "updatedDate": "2022-08-26T13:40:10.447Z",
+      "title": "Latest updates, and all",
+      "content": "elided for readability, elided for readability",
+      "imageUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "likesCount": 1,
+      "isLikedByCurrentUser": false,
+      "author": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "test@gmail.com",
+        "displayName": "kind",
+        "avatarUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      }
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa2",
+      "createdDate": "2022-08-26T13:40:10.447Z",
+      "updatedDate": "2022-08-26T13:40:10.447Z",
+      "title": "Latest updates, and all",
+      "content": "elided for readability, elided for readability",
+      "imageUrl": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+      "likesCount": 1,
+      "isLikedByCurrentUser": false,
+      "author": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "test@gmail.com",
+        "displayName": "kind",
+        "avatarUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      }
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa9",
+      "createdDate": "2022-08-26T13:40:10.447Z",
+      "updatedDate": "2022-08-26T13:40:10.447Z",
+      "title": "Latest updates, and all",
+      "content": "elided for readability, elided for readability",
+      "imageUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "likesCount": 1,
+      "isLikedByCurrentUser": false,
+      "author": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "email": "test@gmail.com",
+        "displayName": "kind",
+        "avatarUrl": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+      }
+    }
+  ]
+}

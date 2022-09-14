@@ -1,0 +1,9 @@
+<div class="card-text d-flex justify-content-between align-items-center mb-2">
+  <div>{{ postsList.length }} results found</div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 mb-2" *ngFor="let post of postsList">
+    <app-story [post]="post"></app-story>
+  </div>
+</div>

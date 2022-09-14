@@ -1,0 +1,91 @@
+<section class="vh-100" style="background-color: #eff0f2">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 0.75rem">
+          <div class="card-body p-5">
+            <h3 class="mb-5 fw-bold fs-5">Log in</h3>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <div class="form-group mb-4">
+                <label class="form-label" id="email">Email</label>
+                <input
+                  style="height: 3rem"
+                  type="email"
+                  formControlName="email"
+                  placeholder="Enter your email"
+                  class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                />
+                <div
+                  *ngIf="submitted && f['email'].errors"
+                  class="invalid-feedback"
+                >
+                  <div *ngIf="f['email'].errors['required']">
+                    Email is required
+                  </div>
+                  <div *ngIf="f['email'].errors['email']">
+                    Email must be a valid email address
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <label class="form-label" id="password">Password</label>
+                <input
+                  style="height: 3rem"
+                  type="password"
+                  formControlName="password"
+                  placeholder="Enter password"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid': submitted && f['password'].errors
+                  }"
+                />
+                <div
+                  *ngIf="submitted && f['password'].errors"
+                  class="invalid-feedback"
+                >
+                  <div *ngIf="f['password'].errors['required']">
+                    Password is required
+                  </div>
+                  <div *ngIf="f['password'].errors['minlength']">
+                    Password must be at least 6 characters
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col d-flex flex-column">
+                  <div class="form-check mb-4 d-flex align-items-end">
+                    <input
+                      style="width: 20px; height: 20px"
+                      class="form-check-input me-3"
+                      type="checkbox"
+                      value=""
+                      id="form2Example31"
+                      checked
+                    />
+                    <label class="form-check-label" for="form2Example31">
+                      Remember me
+                    </label>
+                  </div>
+                  <button
+                    [disabled]="loading"
+                    class="btn btn-primary mb-5 btn-lg"
+                  >
+                    <span
+                      *ngIf="loading"
+                      class="spinner-border spinner-border-sm mr-1"
+                    ></span>
+                    Login
+                  </button>
+                  <div class="col d-flex justify-content-center">
+                    <a class="fs-5" href="#!">Forgot password?</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
