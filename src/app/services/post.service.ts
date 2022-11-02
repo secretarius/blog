@@ -1,21 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { PostServiceInterface } from './post.service.interface';
 import { Post } from '../components/shared/model/post';
 import {baseUrl, postUrl} from '../config/api';
-import {Newpost} from "../components/shared/interfaces/newpost.interface";
 
 @Injectable({
   providedIn: 'root',
 })
-export class PostService implements PostServiceInterface {
+export class PostService {
   constructor(private httpClient: HttpClient) {}
 
   getPost(): Observable<Post[]> {
     return this.httpClient.get<Post[]>(postUrl);
   }
-  addPost(newPost: Newpost): Observable<Newpost> {
+
+  addPost(newPost: Post): Observable<Post[]> {
     return this.httpClient.post<any>(`${baseUrl}` + '/posts', newPost);
   }
   updatePost(postToUpdate: Post): Observable<string> {

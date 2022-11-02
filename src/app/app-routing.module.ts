@@ -16,6 +16,12 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
+    path: 'story-detail',
+    loadChildren: () =>
+      import('./components/home/story-list/story-detail/story-detail.module').then((m) => m.StoryDetailModule),
+    canActivate: [AuthGuard],
+  },
+  {
     path: 'login',
     loadChildren: () =>
       import('./components/login/login.module').then((m) => m.LoginModule),

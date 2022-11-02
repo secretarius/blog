@@ -9,9 +9,10 @@ import { StoryListComponent } from './story-list/story-list.component';
 import { StoryComponent } from './story-list/story/story.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgxMatFileInputModule} from "@angular-material-components/file-input";
+import { StoryDetailComponent } from './story-list/story-detail/story-detail.component';
 
 @NgModule({
-  declarations: [HomeComponent, StoryListComponent, StoryComponent],
+  declarations: [HomeComponent, StoryListComponent, StoryComponent, StoryDetailComponent],
   exports: [HomeComponent],
   imports: [
     CommonModule,
